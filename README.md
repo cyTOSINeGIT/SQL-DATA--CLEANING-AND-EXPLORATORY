@@ -1,8 +1,10 @@
 **LAYOFFS DATA SET PROJECT OVERVIEW**
 
-This project focuses on data cleaning and preparation using MySQL on a company layoffs dataset.
+This project focuses on data cleaning, preparation, and exploratory data analysis (EDA) using MySQL on a company layoffs dataset.
 
 The project starts by inspecting the original layoffs table and creating staging tables to safely perform the cleaning process without modifying the original dataset.
+
+**Data Cleaning & Preparation**
 
 The main data-cleaning tasks include:
 
@@ -16,9 +18,34 @@ Removing duplicate records from the cleaned staging table
 Inspecting individual company records
 Standardising company names using TRIM()
 Checking distinct company values before and after cleaning
-Preparing the dataset for further analysis
+Converting the date column into a usable date format
+Preparing the cleaned dataset for exploratory analysis
 
-The project demonstrates practical SQL skills in data cleaning, duplicate detection, staging-table creation, record deletion, and data standardisation.
+**Exploratory Data Analysis**
+
+After cleaning the dataset, SQL queries are used to explore layoff patterns, trends, and company-level performance.
+
+The exploratory analysis includes:
+
+Calculating maximum and minimum layoffs
+Identifying companies with 100% of their workforce laid off
+Comparing companies based on total employees laid off
+Analysing total layoffs by company
+Analysing total layoffs by industry
+Comparing layoffs across different locations
+Filtering and investigating specific locations
+Analysing layoffs by year
+Examining layoffs by company stage
+Calculating average and total layoff percentages
+Analysing monthly layoffs
+Creating a rolling total of layoffs over time
+Analysing total layoffs by company and year
+Ranking companies by total layoffs for each year
+Identifying the top five companies with the highest layoffs in each year using CTE, DENSE_RANK(), and window functions
+
+The project demonstrates practical MySQL skills in data cleaning, duplicate detection, data transformation, exploratory analysis, aggregation, CTEs, date analysis, rolling totals, ranking, and window functions.
+
+Overall, the analysis transforms a raw company layoffs dataset into a cleaner and more structured dataset that can be used to understand layoff trends across companies, industries, locations, stages, months, and years.
 
 **ENTERPRISE DATA SET PROJECT OVERVIEW**
 
